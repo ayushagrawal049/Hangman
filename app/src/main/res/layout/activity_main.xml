@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/p">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="  Current Score-0"
+            android:id="@+id/cs"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFF"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="  High Score-0"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFF"
+            android:id="@+id/hs"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/bg"
+        android:background="@drawable/start"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:id="@+id/ht"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:backgroundTint="#FFFF"
+            android:singleLine="true"
+            android:textColor="#FFFF"
+            android:textColorLink="#FFFF"
+            tools:textCursorDrawable="#FFFF"
+            android:id="@+id/et"
+            android:maxLength="1"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            android:text="ENTER"
+            android:textColor="#000"
+            android:onClick="enter"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="  WRONG GUESSED LETTERS:-"
+        android:textColor="#FFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:textColor="#FFFF"
+        android:id="@+id/eti"/>
+
+</LinearLayout>
